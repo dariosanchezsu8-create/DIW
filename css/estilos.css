@@ -1,0 +1,137 @@
+* {
+box-sizing: border-box;
+font-family: 'Pacifico',serif;
+font-weight:bold;
+}
+
+h1,h4,p {
+  font-size:29px;
+   margin: 0px;
+  text-align: center;
+}
+
+body {
+  background-color: white;
+}
+.container {
+  background-color: white;
+  color: #666666;
+  font-family: "Lobster", cursive;
+  width: 90%;
+  margin: 20px auto;
+
+  
+}
+
+/* El contenedor flex para la primera fila de contenido */
+.content_wrapper {
+display:flex;
+flex-wrap: wrap;
+justify-content:space-between;
+
+
+}
+
+header {
+padding:25px;
+  width: 100%;
+
+}
+header h1 {
+font-size:40px;
+font-weight: bold;
+
+
+}
+
+/* El menú */
+nav {
+padding:30px;
+margin: 0%;
+  
+}
+.principal{
+   width: 60%; 
+
+}
+
+nav div {
+font-size:25px ;
+margin-bottom:25px;
+}
+
+/* El elemento principal */
+main div {
+display:flex;
+flex-direction:row;
+flex-wrap: wrap;
+align-content:space-between;
+justify-content:flex-start;
+text-align:center;
+margin:20px;
+margin-top: 0%;
+
+}
+p {
+  font-size: 23px;
+}
+.contenedor{
+padding: left 50px;
+  height: 70%;
+  width: 80%;
+}
+
+main div article {
+ border:1px solid gray;
+ border-radius: 20px; 
+ padding:30px;
+ margin:15px;
+ height: 700px;
+ width:32%;
+}
+
+.content_wrapper{
+    display:flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+h2{
+  font-size:30px;
+  font-weight:bold;
+  font-style: italic;
+
+}
+.articles {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+article img {
+border-radius: 30px;
+  height: 60%;
+  width: 100%;
+align-items: center;
+}
+
+/* Pie de la página */
+/* Pie de la página */
+footer {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.copyright{
+
+  font-size:25px;
+}
+.social{
+padding: 35px;
+}
+
+footer img {
+   width:"90px";
+  height:"90px";
+}
