@@ -32,23 +32,41 @@ main{
     grid-template-rows: auto ,auto ,auto;
 }
 main section{
-background-color:white;
-margin: 10px;
-padding: 10px;
-border:3px solid green;
-border-radius: 5px;
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
+    border:3px solid green;
+    border-radius: 5px;
 }
 .sc_uno{
-grid-column: 2/3;
-grid-row:1/2;
+    grid-column: 2/3;
+    grid-row:1/2;
+}
+section p {
+    text-align: justify;
+    font-size: 15px;
+}
+.contenedor{
+    text-align: center;
 }
 .sc_dos{
-grid-column: 2/3;
-grid-row:2/3;
+    grid-column: 2/3;
+    grid-row:2/3;
+
 }
+.contenedor_dos{
+    text-align: center;
+}
+
+section table tr td {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 .sc_tres{
-grid-column: 2/3;
-grid-row:3/4;
+    grid-column: 2/3;
+    grid-row:3/4;
 }
 
 footer{
