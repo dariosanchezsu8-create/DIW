@@ -1,97 +1,272 @@
-<!---PROYECTO REALIZADO POR DARIO SANCHEZ SUAREZ-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto global 1 evaluacion</title>
-    <link rel="stylesheet" href="css.css"/>
-
+    <meta name="description">
+    <title>Proyecto_global</title>
+    <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
-        <!--Se intentará hacer la promocion de la 50 edicion de rally 
-        historico de aviles, entorno a la escuderia principal y mencionando
-        otras que han participado
-        Por lo que se pondra tanto el intinerario un audio de la entrevista 
-        que dio el ayuntamieno y demas de esta edicion 2026
-        Video de rally como fue, carrusel de imagen de los pilotos ganadores de los ultimos años
-        Parrafo explicando la procedencia de la organizacion y
-        como se ha llevado a cabo esta 50 edicion
-        entrevista al ganador por video ganador-->
-
-    <header>
-        <h1>ESCUDERIA AVILESINA</h1>
-    <nav>
-        <a>Seccion 1</a>
-        <a>Seccion 2</a>
-        <a>Seccion 3</a>
-        <p>Poner iconos pra seccion y pseudo clases</p>
-    </nav>
-    </header>
-    <main>
-        <section class="sc_uno">
-            <div class="contenedor">
-            <h2>50 Edición Rally de Aviles Histórico</h2>
-                <img src="/Proyecto_global/rally.jpg" alt="50 edicion" width="100px" height="150px"></img>
-                <p>El Rallye de Avilés empezó en 1974 por la gran afición al motor que hay en Asturias, convirtiéndose pronto en una carrera muy famosa del norte de España. Todo esto es posible gracias a la Escudería Avilés, el club local que organiza la prueba desde el principio con mucho trabajo y dedicación. Este año el rally celebra su edición número 50, una fiesta muy especial que reúne a los mejores coches clásicos de carreras del país. Durante el evento, las carreteras de la zona vuelven a llenarse de ambiente para disfrutar del espectáculo y del sonido de estos vehículos históricos.</p>
-            </div>
+    <header class="cabecera">
+        <div class="marca">
+            <img>FOTO CAPTURA</img>
             <div>
-                <div>       
-                    <h3>Resumen 50ª Edición</h3>       
-                    <video width="250px" height="250px" controls>
-                            <source src="/Proyecto_global/video_resumen.mp4" type="video/mp4">
+                <h1>Escudería Avilesina</h1>
+                <p class="marca__lema">50 Rallye de Avilés Histórico · 10 y 11 de julio de 2026 -- cambiar debajo de la foto</p>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><img>🏁</img> El rallye</li>
+                <li><img>🎬</img> Multimedia</li>
+                <li><img>🏆</img> Ganadores</li>
+                <li><img>🕒</img> Itinerario</li>
+                <li><img>🗺️</img> Mapa</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+
+        <section class="bloque presentacion">
+            <div class="presentacion__texto">
+                <p class="etiqueta">Campeonato de España de Rallyes Históricos</p>
+                <h2 id="t-rally">50 Edición del Rallye de Avilés Histórico</h2>
+                <p>El Rallye de Avilés nació de la gran afición al motor que hay en Asturias y se convirtió pronto en una carrera muy conocida del norte de España. Todo esto es posible gracias a la Escudería Avilesina, el club local que organiza la prueba desde el principio con mucho trabajo y dedicación.</p>
+                <p>Este año el rallye celebra su edición número 50, una fiesta muy especial que reúne a los mejores coches clásicos de carreras del país. Durante el evento, las carreteras de la comarca vuelven a llenarse de ambiente para disfrutar del espectáculo y del sonido de estos vehículos históricos.</p>
+            </div>
+            <figure class="presentacion__cartel">
+                <img src="imagenes_video/rally.jpg" alt="Cartel de la 50 edición del Rallye de Avilés Histórico" width="300" height="420">
+            </figure>
+            <dl class="datos">
+                <div>
+                    <!--Esto se hace con tabla-->
+                    <dt>Tramos cronometrados</dt>
+                    <dd>8</dd>
+                </div>
+                <div>
+                    <dt>Kilómetros de tramo</dt>
+                    <dd>113</dd>
+                </div>
+                <div>
+                    <dt>Equipos inscritos</dt>
+                    <dd>74</dd>
+                </div>
+                <div>
+                    <dt>Días de rallye</dt>
+                    <dd>2</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="bloque multimedia">
+            <h2 id="t-multi">Así se vivió la 50 edición</h2>
+            <div class="multimedia__rejilla">
+                <article class="tarjeta">
+                    <h3>Resumen en vídeo</h3>
+                    <video controls preload="metadata" poster="imagenes_video/poster_resumen.jpg">
+                        <source src="imagenes_video/video_resumen.mp4" type="video/mp4">
+                        Cambiar formato -Tu navegador no admite la reproducción de vídeo.
                     </video>
-                    <p>FALTA IGUAL PONER ALGO DERECHA</p>
+                    <p>Los mejores momentos del fin de semana</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Entrevista al ganador</h3>
+                    <video controls preload="metadata" poster="imagenes_video/poster_entrevista.jpg">
+                        <source src="imagenes_video/entrevista_ganador.mp4" type="video/mp4">
+                        Tu navegador no admite la reproducción de vídeo.
+                    </video>
+                    <p>El equipo vencedor cuenta cómo fue la carrera.</p>
+                </article>
+                <article class="tarjeta tarjeta--audio">
+                    <h3>Entrevista del Ayuntamiento</h3>
+                    <p>Escucha la presentación de la edición 2026 con el concejal de Deportes y la Escudería Avilesina.</p>
+                    <audio controls >
+                        <source src="imagenes_video/entrevista_ayuntamiento.mp3" type="audio/mpeg">
+                       Cambiar formato Tu navegador no admite la reproducción de audio.
+                    </audio>
+                </article>
+            </div>
+        </section>
+
+        <section class="bloque ganadores">
+            <h2 id="t-gan">Equipos ganadores</h2>
+            <p class="ganadores__intro">Ganadores de las ultimas 5 ediciones.</p>
+            <ul class="carrusel">
+                <li>
+                        <img src="imagenes_video/xesus_javier.jpg" alt="Xesús Ferreiro y Javier Anido, ganadores de la 46 edición" width="260" height="180">
+                        <strong>46ª Edición</strong><span>Xesús Ferreiro - Javier Anido</span>
+                </li>
+                <li>
+                        <img src="imagenes_video/daniel_.jpg" alt="Daniel Alonso y Zacarías Llamas, ganadores de la 47 edición" width="260" height="180">
+                        <h3><strong>47ª Edición</strong></h3><span>Daniel Alonso - Zacarías Llamas</span>
+                </li>
+                <li>
+                        <img src="imagenes_video/muniente_louzano.jpg" alt="Javier Muñiente e Iván Bouza, ganadores de la 48 edición" width="260" height="180">
+                        <strong>48ª Edición</strong><span>Javier - Iván Bouza</span>
+                </li>
+                <li>
+                        <img src="imagenes_video/javier_ivan.jpg" alt="Xesús Ferreiro y Javier Anido, ganadores de la 49 edición" width="260" height="180">
+                        <strong>49ª Edición</strong><span>Xesús Ferreiro - Javier Anido</span>
+                </li>
+                <li class="carrusel__oro">
+                        <img src="imagenes_video/xesus_javier_dos.jpg" alt="Xesús Ferreiro y Javier Anido, ganadores de la 50 edición" width="260" height="180">
+                        <strong>50ª Edición </strong><span>Xesús Ferreiro - Javier Anido</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="bloque itinerario">
+            <h2 id="t-iti">Itinerario y horarios</h2>
+            <div class="itinerario__rejilla">
+                <div class="tabla-caja">
+                    <table>
+                        <caption>Viernes 10 de julio</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Hora</th>
+                                <th scope="col">Actividad</th>
+                                <th scope="col">Lugar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10:00 – 13:00</td>
+                                <td>Entrega de documentación</td>
+                                <td>Escudería Avilesina</td>
+                            </tr>
+                            <tr>
+                                <td>16:00 – 19:30</td>
+                                <td>Verificaciones técnicas</td>
+                                <td>Complejo Deportivo de Avilés</td>
+                            </tr>
+                            <tr>
+                                <td>20:00</td>
+                                <td>Ceremonia de salida</td>
+                                <td>Plaza Pedro Menéndez</td>
+                            </tr>
+                            <tr>
+                                <td>20:15 – 21:00</td>
+                                <td>Parque cerrado</td>
+                                <td>Plaza de España</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tabla-caja">
+                    <table>
+                        <caption>Sábado 11 de julio</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Hora</th>
+                                <th scope="col">Actividad</th>
+                                <th scope="col">Distancia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>08:30</td>
+                                <td>Salida del rallye Plaza de España</td>
+                                <td>–</td>
+                            </tr>
+                            <tr class="tc">
+                                <td>09:22</td>
+                                <td>TC1 · Serín-Tamón</td>
+                                <td>13,640 km</td>
+                            </tr>
+                            <tr class="tc">
+                                <td>09:50</td>
+                                <td>TC2 · Solís-Llanera</td>
+                                <td>15,210 km</td>
+                            </tr>
+                            <tr>
+                                <td>10:30</td>
+                                <td>Reagrupamiento Piedras Blancas</td>
+                                <td>20 min</td>
+                            </tr>
+                            <tr class="tc"><td>11:55</td>
+                                <td>TC3 · Serín-Tamón</td>
+                                <td>13,640 km</td>
+                            </tr>
+                            <tr class="tc">
+                                <td>12:23</td>
+                                <td>TC4 · Solís-Llanera</td>
+                                <td>15,210 km</td>
+                            </tr>
+                            <tr>
+                                <td>13:03</td>
+                                <td>Reagrupamiento Piedras Blancas</td>
+                                <td>20 min</td>
+                            </tr>
+                            <tr class="tc">
+                                <td>15:39</td>
+                                <td>TC5 · La Peral-Santoseso</td>
+                                <td>12,615 km</td>
+                            </tr>
+                            <tr class="tc">
+                                <td>16:06</td>
+                                <td>TC6 · Grado-La Mortera</td>
+                                <td>15,043 km</td>
+                            </tr>
+                            <tr>
+                                <td>17:02</td>
+                                <td>Reagrupamiento Piedras Blancas</td>
+                                <td>15 min</td>
+                            </tr>
+                            <tr class="tc">
+                                <td>18:13</td>
+                                <td>TC7 · La Peral-Santoseso</td>
+                                <td>12,615 km</td>
+                            </tr>
+                            <tr class="tc">
+                                <td>18:50</td>
+                                <td>TC8 · Grado-La Mortera</td>
+                                <td>15,043 km</td>
+                            </tr>
+                            <tr>
+                                <td>19:50</td>
+                                <td>Final del rallye Plaza de España</td>
+                                <td>–</td>
+                            </tr>
+                            <tr>
+                                <td>21:00</td>
+                                <td>Entrega de trofeos podio</td>
+                                <td>–</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
-        <section class="sc_dos">
-            <div>
-            <h3>Equipo Ganador</h3>
-                <table>
-                <tr>
-                    <td>46ª Edición</td>
-                    <td>47ª Edición</td>
-                    <td>48ª Edición</td>
-                    <td>49ª Edición</td>                     
-                </tr>
-                <tr>
-                    <td><img src="xesus_javier.jpg" width="150px" height="100px"></img></td>
-                    <td><img src="daniel_.jpg"width="150px" height="100px"></img></td>
-                    <td><img src="muniente_louzano.jpg"width="150px" height="100px"></td>
-                    <td><img src="javier_ivan.jpg"width="150px" height="100px"></td>                     
-                </tr>
-                <tr>
-                    <td>Xesús Ferreiro - Javier Anido</td>
-                    <td>Daniel Alonso - Zacarías Llamas</td>
-                    <td>Javiér - Ivan Bouza</td>
-                    <td>Xesús Ferreiro - Javier Anido</td>                     
-                </tr>
-            </table>
-            </div>
-            <div class="contenedor_dos">
-                <p>50ª Edición</p>
-                <br></br>
-                <img src="xesus_javier_dos.jpg" width="200px" height="150px"></img>
-            </div>
-        </section>
-        <section class="sc_tres">
-            <h3>SECCION 3</h3>
 
+        <section class="bloque mapa">
+            <h2 id="t-mapa">Mapa de los tramos</h2>
+            <div class="mapa__rejilla">
+                    <img src="imagenes_video/Captura.PNG" alt="Mapa de Google Maps con la situación de los cuatro tramos del rallye en la comarca de Avilés" width="800" height="500">
+                <ol class="tramos">
+                    <li><strong>Serín-Tamón</strong><span>TC1 y TC3 · 13,640 km</span></li>
+                    <li><strong>Solís-Llanera</strong><span>TC2 y TC4 · 15,210 km</span></li>
+                    <li><strong>La Peral-Santoseso</strong><span>TC5 y TC7 · 12,615 km</span></li>
+                    <li><strong>Grado-La Mortera</strong><span>TC6 y TC8 · 15,043 km</span></li>
+                </ol>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="pie">
+        <!--Separar con flex el contenedor de footer-->
+        <div class="pie__org">
+            <img>FOTO</img>
+            <p>La Escudería Avilesina es el club de automovilismo de Avilés que organiza el Rallye de Avilés Histórico desde sus inicios.
+            </div>
+            <!--Separa las imganes con el flex-->
         <div>
-            <p>Parrafo de la empresa</p>
-            <p>Aqui iria la imagen de la empresa</p>
-        </div>
-        <div>   
-            <img>Instagram</img>
+            <img>IG</a></img>
             <img>X</img>
-            <img>Facebook</img>
-            <img>Youtube</img>
-        </div>
+            <img>FB</img>
+            <img>T</img>
+       </div>
     </footer>
 </body>
 </html>
