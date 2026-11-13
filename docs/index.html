@@ -10,10 +10,10 @@
 <body>
     <header class="cabecera">
         <div class="marca">
-            <img>FOTO CAPTURA</img>
+            <img src="imagenes_video/img_cartel.jpg" alt="Cartel_Rally" width="150px" height="150px"></img>
             <div>
                 <h1>Escudería Avilesina</h1>
-                <p class="marca__lema">50 Rallye de Avilés Histórico · 10 y 11 de julio de 2026 -- cambiar debajo de la foto</p>
+                <p class="marca__lema">50 Rallye de Avilés Histórico · 10 y 11 de julio de 2026</p>
             </div>
         </div>
         <nav class="menu">
@@ -41,7 +41,6 @@
             </figure>
             <dl class="datos">
                 <div>
-                    <!--Esto se hace con tabla-->
                     <dt>Tramos cronometrados</dt>
                     <dd>8</dd>
                 </div>
@@ -65,16 +64,16 @@
             <div class="multimedia__rejilla">
                 <article class="tarjeta">
                     <h3>Resumen en vídeo</h3>
-                    <video controls preload="metadata" poster="imagenes_video/poster_resumen.jpg">
-                        <source src="imagenes_video/video_resumen.mp4" type="video/mp4">
+                    <video controls preload="metadata">
+                        <source src="imagenes_video/entrevista.mp4" type="video/mp4">
                         Cambiar formato -Tu navegador no admite la reproducción de vídeo.
                     </video>
                     <p>Los mejores momentos del fin de semana</p>
                 </article>
                 <article class="tarjeta">
                     <h3>Entrevista al ganador</h3>
-                    <video controls preload="metadata" poster="imagenes_video/poster_entrevista.jpg">
-                        <source src="imagenes_video/entrevista_ganador.mp4" type="video/mp4">
+                    <video controls >
+                        <source src="imagenes_video/video_resumen.mp4" type="video/mp4">
                         Tu navegador no admite la reproducción de vídeo.
                     </video>
                     <p>El equipo vencedor cuenta cómo fue la carrera.</p>
@@ -125,9 +124,9 @@
                         <caption>Viernes 10 de julio</caption>
                         <thead>
                             <tr>
-                                <th scope="col">Hora</th>
-                                <th scope="col">Actividad</th>
-                                <th scope="col">Lugar</th>
+                                <th>Hora</th>
+                                <th>Actividad</th>
+                                <th>Lugar</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -159,9 +158,9 @@
                         <caption>Sábado 11 de julio</caption>
                         <thead>
                             <tr>
-                                <th scope="col">Hora</th>
-                                <th scope="col">Actividad</th>
-                                <th scope="col">Distancia</th>
+                                <th>Hora</th>
+                                <th>Actividad</th>
+                                <th>Distancia</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -245,27 +244,32 @@
             <div class="mapa__rejilla">
                     <img src="imagenes_video/Captura.PNG" alt="Mapa de Google Maps con la situación de los cuatro tramos del rallye en la comarca de Avilés" width="800" height="500">
                 <ol class="tramos">
-                    <li><strong>Serín-Tamón</strong><span>TC1 y TC3 · 13,640 km</span></li>
-                    <li><strong>Solís-Llanera</strong><span>TC2 y TC4 · 15,210 km</span></li>
-                    <li><strong>La Peral-Santoseso</strong><span>TC5 y TC7 · 12,615 km</span></li>
-                    <li><strong>Grado-La Mortera</strong><span>TC6 y TC8 · 15,043 km</span></li>
+                    <li>
+                        <strong>Serín-Tamón</strong><span>TC1 y TC3 · 13,640 km</span>
+                    </li>
+                    <li><strong>Solís-Llanera</strong><span>TC2 y TC4 · 15,210 km</span>
+                    </li>
+                    <li>
+                        <strong>La Peral-Santoseso</strong><span>TC5 y TC7 · 12,615 km</span>
+                    </li>
+                    <li>
+                        -<strong>Grado-La Mortera</strong><span>TC6 y TC8 · 15,043 km</span>
+                    </li>
                 </ol>
             </div>
         </section>
     </main>
 
     <footer class="pie">
-        <!--Separar con flex el contenedor de footer-->
-        <div class="pie__org">
-            <img>FOTO</img>
+         <div class="pie__org">
+            <img src="imagenes_video/img_cartel.jpg" alt="Cartel_Rally" width="70px" height="70px"></img>
             <p>La Escudería Avilesina es el club de automovilismo de Avilés que organiza el Rallye de Avilés Histórico desde sus inicios.
             </div>
-            <!--Separa las imganes con el flex-->
-        <div>
-            <img>IG</a></img>
-            <img>X</img>
-            <img>FB</img>
-            <img>T</img>
+        <div class="contenedor_pie">
+            <img src="imagenes_video/ig.jpg" alt="Imagen IG" width="45px" height="45px"></img>
+            <img src="imagenes_video/x.jpg" alt="Imagen X" width="45px" height="45px"></img>
+            <img src="imagenes_video/fb.png" alt="Imagen Facebook" width="40px" height="40px"></img>
+            <img src="imagenes_video/tk.jpg" alt="Imagen Tiktok" width="40px" height="40px"></img>
        </div>
     </footer>
 </body>
