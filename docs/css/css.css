@@ -24,7 +24,6 @@ h1, h2, h3 {
     padding: .6rem 1rem;
     z-index: 10;
 }
-.saltar:focus { left: 1rem; top: 1rem; }
 
 /* ---------- Cabecera ---------- */
 .cabecera {
@@ -40,8 +39,6 @@ h1, h2, h3 {
     align-items: center;
      gap: 1rem;
      }
-
-
 
 .menu ul {
     list-style: none;
@@ -133,7 +130,6 @@ p { text-align: justify; }
     gap: 1rem;
 }
 .tarjeta {
-    background: var(--crema);
     border-radius: 8px;
     padding: 1rem;
 }
@@ -155,7 +151,6 @@ p { text-align: justify; }
     flex: 0 0 260px;
     scroll-snap-align: start;
     background: var(--asfalto);
-    color: var(--crema);
     border-radius: 8px;
     overflow: hidden;
 }
@@ -183,18 +178,9 @@ caption {
     padding: .5rem 0;
 }
 th {
-    background: var(--asfalto);
-    color: var(--crema);
     text-align: left;
     padding: .55rem .7rem;
 }
-td { padding: .3rem .6rem; border-bottom: 1px solid #ddd; }
-td:first-child { font-weight: bold; white-space: nowrap; }
-tbody tr:nth-child(even) { background-color: #faf7f0; }
-tbody tr:hover { background-color: #fff3cf; }
-tr.tc td { background-color: #fde4e8; border-left: 0; }
-tr.tc td:first-child { border-left: 5px solid var(--rojo); }
-.nota { font-size: .85rem; color: #444; }
 
 /* ---------- 5. Mapa ---------- */
 .mapa__rejilla {
@@ -246,6 +232,8 @@ tr.tc td:first-child { border-left: 5px solid var(--rojo); }
     flex-direction:row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
 }
 
 /* ---------- Media Queries ---------- */
@@ -261,8 +249,6 @@ tr.tc td:first-child { border-left: 5px solid var(--rojo); }
     .mapa figure { grid-column: 1 / -1; }
     .pie { flex-direction: row; justify-content: space-between; }
 }
-
-/* Escritorio: 1024px en adelante */
 @media (min-width: 1024px) {
     .cabecera {
         flex-direction: row;
@@ -291,7 +277,3 @@ tr.tc td:first-child { border-left: 5px solid var(--rojo); }
     .pie__org p { text-align: center; }
 }
 
-/* Accesibilidad: respeta la preferencia de menos movimiento */
-@media (prefers-reduced-motion: reduce) {
-    * { transition: none !important; scroll-behavior: auto !important; }
-}
