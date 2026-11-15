@@ -19,11 +19,6 @@ h1, h2, h3 {
      margin: 0 0 .6rem; 
     }
 
-.saltar {
-    left: -999px;
-    padding: .6rem 1rem;
-    z-index: 10;
-}
 
 /* ---------- Cabecera ---------- */
 .cabecera {

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description">
     <title>Proyecto_global</title>
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css_basico.css">
 </head>
 <body>
     <header class="cabecera">
@@ -27,109 +27,107 @@
         </nav>
     </header>
 
-    <main id="contenido">
-
-        <section class="bloque presentacion">
+    <main>
+        <section class="sc_uno">
             <div class="presentacion__texto">
                 <p class="etiqueta">Campeonato de España de Rallyes Históricos</p>
-                <h2 id="t-rally">50 Edición del Rallye de Avilés Histórico</h2>
+                <h2>50 Edición del Rallye de Avilés Histórico</h2>
                 <p>El Rallye de Avilés nació de la gran afición al motor que hay en Asturias y se convirtió pronto en una carrera muy conocida del norte de España. Todo esto es posible gracias a la Escudería Avilesina, el club local que organiza la prueba desde el principio con mucho trabajo y dedicación.</p>
                 <p>Este año el rallye celebra su edición número 50, una fiesta muy especial que reúne a los mejores coches clásicos de carreras del país. Durante el evento, las carreteras de la comarca vuelven a llenarse de ambiente para disfrutar del espectáculo y del sonido de estos vehículos históricos.</p>
             </div>
-            <figure class="presentacion__cartel">
+            <div class="cartel">
                 <img src="imagenes_video/rally.jpg" alt="Cartel de la 50 edición del Rallye de Avilés Histórico" width="300" height="420">
-            </figure>
+            </div>
             <dl class="datos">
-                <div>
+                <div class="contenido">
                     <dt>Tramos cronometrados</dt>
                     <dd>8</dd>
                 </div>
-                <div>
+                <div class="contenido">
                     <dt>Kilómetros de tramo</dt>
                     <dd>113</dd>
                 </div>
-                <div>
+                <div class="contenido">
                     <dt>Equipos inscritos</dt>
                     <dd>74</dd>
                 </div>
-                <div>
+                <div class="contenido">
                     <dt>Días de rallye</dt>
                     <dd>2</dd>
                 </div>
             </dl>
         </section>
 
-        <section class="bloque multimedia">
-            <h2 id="t-multi">Así se vivió la 50 edición</h2>
-            <div class="multimedia__rejilla">
-                <article class="tarjeta">
+        <section class="sc_dos">
+            <div>
+            <h2>Así se vivió la 50 edición</h2>
+            </div>    
+                <div class="tarjeta_uno">
                     <h3>Resumen en vídeo</h3>
                     <video controls preload="metadata">
-                        <source src="imagenes_video/entrevista.mp4" type="video/mp4">
+                        <source src="imagenes_video/entrevista_ganadores.mp4" type="video/mp4">
                         Cambiar formato -Tu navegador no admite la reproducción de vídeo.
                     </video>
                     <p>Los mejores momentos del fin de semana</p>
-                </article>
-                <article class="tarjeta">
+                </div >
+                <div class="tarjeta_dos">
                     <h3>Entrevista al ganador</h3>
                     <video controls >
                         <source src="imagenes_video/video_resumen.mp4" type="video/mp4">
                         Tu navegador no admite la reproducción de vídeo.
                     </video>
                     <p>El equipo vencedor cuenta cómo fue la carrera.</p>
-                </article>
-                <article class="tarjeta tarjeta--audio">
-                    <h3>Entrevista del Ayuntamiento</h3>
-                    <p>Escucha la presentación de la edición 2026 con el concejal de Deportes y la Escudería Avilesina.</p>
+                </div>
+                <div class="tarjeta_tres">
+                    <h3>Resumen Completo del Rally</h3>
+                    <p>Escucha el resumen completo de la entrevistas hechas a los pilotos mas destacados de esta edición.</p>
                     <audio controls >
-                        <source src="imagenes_video/entrevista_ayuntamiento.mp3" type="audio/mpeg">
+                        <source src="imagenes_video/resumen_completo.mp4" type="audio/mp4">
                        Cambiar formato Tu navegador no admite la reproducción de audio.
                     </audio>
-                </article>
-            </div>
+                </div>
         </section>
 
-        <section class="bloque ganadores">
-            <h2 id="t-gan">Equipos ganadores</h2>
-            <p class="ganadores__intro">Ganadores de las ultimas 5 ediciones.</p>
-            <ul class="carrusel">
-                <li>
-                        <img src="imagenes_video/xesus_javier.jpg" alt="Xesús Ferreiro y Javier Anido, ganadores de la 46 edición" width="260" height="180">
-                        <strong>46ª Edición</strong><span>Xesús Ferreiro - Javier Anido</span>
-                </li>
-                <li>
-                        <img src="imagenes_video/daniel_.jpg" alt="Daniel Alonso y Zacarías Llamas, ganadores de la 47 edición" width="260" height="180">
-                        <h3><strong>47ª Edición</strong></h3><span>Daniel Alonso - Zacarías Llamas</span>
-                </li>
-                <li>
-                        <img src="imagenes_video/muniente_louzano.jpg" alt="Javier Muñiente e Iván Bouza, ganadores de la 48 edición" width="260" height="180">
-                        <strong>48ª Edición</strong><span>Javier - Iván Bouza</span>
-                </li>
-                <li>
-                        <img src="imagenes_video/javier_ivan.jpg" alt="Xesús Ferreiro y Javier Anido, ganadores de la 49 edición" width="260" height="180">
-                        <strong>49ª Edición</strong><span>Xesús Ferreiro - Javier Anido</span>
-                </li>
-                <li class="carrusel__oro">
-                        <img src="imagenes_video/xesus_javier_dos.jpg" alt="Xesús Ferreiro y Javier Anido, ganadores de la 50 edición" width="260" height="180">
-                        <strong>50ª Edición </strong><span>Xesús Ferreiro - Javier Anido</span>
-                </li>
-            </ul>
+        <section class="sc_tres">
+            <h2>Equipos ganadores</h2>
+            <p style="padding-left: 10px;">Ganadores de las ultimas 5 ediciones.</p>
+                <table class="estructura">
+                    <tr>
+                        <td><b>46ª Edición</b></td>
+                        <td><b>47ª Edición</b></td>
+                        <td><b>48ª Edición</b></td>
+                        <td><b>49ª Edición</b></td>
+                        <td><b>50ª Edición</b></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes_video/xesus_javier.jpg" alt="Xesús Ferreiro y Javier Anido, ganadores de la 46 edición" width="230" height="190"></td>
+                        <td><img src="imagenes_video/daniel_.jpg" alt="Daniel Alonso y Zacarías Llamas, ganadores de la 47 edición" width="230" height="190"></td>
+                        <td><img src="imagenes_video/muniente_louzano.jpg" alt="Javier Muñiente e Iván Bouza, ganadores de la 48 edición" width="230" height="190"></td>
+                        <td><img src="imagenes_video/javier_ivan.jpg" alt="Xesús Ferreiro y Javier Anido, ganadores de la 49 edición" width="230" height="190"></td>
+                        <td><img src="imagenes_video/xesus_javier_dos.jpg" alt="Xesús Ferreiro y Javier Anido, ganadores de la 50 edición" width="230" height="190"></td>
+                    </tr>
+                    <tr>
+                        <td>Xesús Ferreiro - Javier Anido</td>
+                        <td>Daniel Alonso - Zacarías Llamas</td>
+                        <td>Javier - Iván Bouza</td>
+                        <td>Xesús Ferreiro - Javier Anido</td>
+                        <td>Xesús Ferreiro - Javier Anido</td>
+                    </tr>
+                </table>
         </section>
 
-        <section class="bloque itinerario">
-            <h2 id="t-iti">Itinerario y horarios</h2>
-            <div class="itinerario__rejilla">
-                <div class="tabla-caja">
+        <section class="sc_cuatro">
+            <h2>Itinerario y horarios</h2>
+            <div class="itinerario">
+                <div class="tabla_uno">
                     <table>
                         <caption>Viernes 10 de julio</caption>
-                        <thead>
                             <tr>
                                 <th>Hora</th>
                                 <th>Actividad</th>
                                 <th>Lugar</th>
                             </tr>
-                        </thead>
-                        <tbody>
+
                             <tr>
                                 <td>10:00 – 13:00</td>
                                 <td>Entrega de documentación</td>
@@ -150,20 +148,16 @@
                                 <td>Parque cerrado</td>
                                 <td>Plaza de España</td>
                             </tr>
-                        </tbody>
                     </table>
                 </div>
-                <div class="tabla-caja">
+                <div class="tabla_dos">
                     <table>
                         <caption>Sábado 11 de julio</caption>
-                        <thead>
                             <tr>
                                 <th>Hora</th>
                                 <th>Actividad</th>
                                 <th>Distancia</th>
                             </tr>
-                        </thead>
-                        <tbody>
                             <tr>
                                 <td>08:30</td>
                                 <td>Salida del rallye Plaza de España</td>
@@ -184,7 +178,8 @@
                                 <td>Reagrupamiento Piedras Blancas</td>
                                 <td>20 min</td>
                             </tr>
-                            <tr class="tc"><td>11:55</td>
+                            <tr class="tc">
+                                <td>11:55</td>
                                 <td>TC3 · Serín-Tamón</td>
                                 <td>13,640 km</td>
                             </tr>
@@ -233,29 +228,34 @@
                                 <td>Entrega de trofeos podio</td>
                                 <td>–</td>
                             </tr>
-                        </tbody>
                     </table>
                 </div>
             </div>
         </section>
 
-        <section class="bloque mapa">
-            <h2 id="t-mapa">Mapa de los tramos</h2>
-            <div class="mapa__rejilla">
+        <section class="sc_cinco">
+            <h2>Mapa de los tramos</h2>
+            <div class="mapa">
                     <img src="imagenes_video/Captura.PNG" alt="Mapa de Google Maps con la situación de los cuatro tramos del rallye en la comarca de Avilés" width="800" height="500">
-                <ol class="tramos">
+                <div>  
+                <ol>
                     <li>
-                        <strong>Serín-Tamón</strong><span>TC1 y TC3 · 13,640 km</span>
+                        <h3>Serín-Tamón</h3>
+                        <p>TC1 y TC3 · 13,640 km</p>
                     </li>
-                    <li><strong>Solís-Llanera</strong><span>TC2 y TC4 · 15,210 km</span>
+                    <li><h3>Solís-Llanera</h3>
+                        <p>TC2 y TC4 · 15,210 km</p>
                     </li>
                     <li>
-                        <strong>La Peral-Santoseso</strong><span>TC5 y TC7 · 12,615 km</span>
+                        <h3>La Peral-Santoseso</h3>
+                        <p>TC5 y TC7 · 12,615 km</p>
                     </li>
                     <li>
-                        -<strong>Grado-La Mortera</strong><span>TC6 y TC8 · 15,043 km</span>
+                        <h3>Grado-La Mortera</h3>
+                        <p>TC6 y TC8 · 15,043 km</p>
                     </li>
                 </ol>
+                </div>  
             </div>
         </section>
     </main>
