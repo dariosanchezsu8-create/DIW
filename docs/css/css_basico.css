@@ -292,12 +292,14 @@ th {
     .cabecera { 
         flex-direction: column; 
     }
-    .menu ul { flex-wrap: wrap;
+    .menu ul { 
+        flex-wrap: wrap;
      }
 
     .sc_uno img { 
         width: 250px; 
     }
+
 
     .datos {
         grid-template-columns: auto auto;
@@ -385,10 +387,6 @@ th {
         grid-column: auto;
         gap: 10px;
     }
-    .datos div { 
-        padding: 15px ; 
-    }
-
     .sc_dos { 
         grid-template-columns: auto; 
     }
