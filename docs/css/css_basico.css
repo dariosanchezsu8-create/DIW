@@ -1,11 +1,7 @@
 
-/*
-Mañana hacer
-1.Poner la paleta de los fondos
-2.Tamaño letra, titulo
-3.Fondo parrafo sc_uno
-4.Revisar q este todo bien
-*/
+*{
+    box-sizing: border-box;
+}
 body {
     background-color: #f4ecd8;
     margin: 0;
