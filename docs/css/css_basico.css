@@ -14,7 +14,7 @@ body {
     color: #241c12;
 }
 
-img, video {
+img, video, audio {
     max-width: 100%;
 }
 
