@@ -1,7 +1,6 @@
 
 *{
     box-sizing: border-box;
-    max-width: 100%;
 }
 body {
     background-color: #f4ecd8;
@@ -101,6 +100,7 @@ section{
 }
 .cartel{
     margin: 30px;
+    width: auto;
 }
 .subtitulo {
     background-color:#ffc20e;
@@ -145,10 +145,14 @@ section{
 
 .sc_dos {
     display: grid;
-    grid-template-columns: auto auto 25%;
-    grid-template-rows:5% 95%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
     align-content: space-between;
     gap: 50px;
+}
+h2{
+    grid-row: 1/2;
+    grid-column: 1/4;
 }
 .tarjeta_uno {
     grid-column: 1/2;
@@ -175,13 +179,13 @@ section{
     }
 .itinerario{
     display: grid;
-    grid-template-columns: 50%;
+    grid-template-columns: auto;
     gap: 20px;
     align-items: start;
 }
 
 .tabla_uno {
-    grid-row:1 /2;
+    grid-row:1/2;
     grid-column: 1/2;
     width: 100%;
     border-collapse: collapse;
@@ -283,21 +287,34 @@ th {
         flex-wrap: wrap;
         gap: 8px;
     }
-
-    .sc_uno { 
-        gap: 50px;
-     }
+    .contenedor{
+        gap: 20px;
+    }
      .cartel{
-        width: 750px;
-        margin: 10px;
+        margin: 0%;
+        padding: 0%;
+        width: auto;
      }
     .datos { 
         gap: 15px; 
     }
 
-    .sc_dos { 
-        gap: 20px;
+    .sc_dos {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+    .tarjeta_uno  {
+         grid-column: 1/2; grid-row: 2/3; }
+    .tarjeta_dos  { 
+        grid-column: 2/3; grid-row: 2/3; 
+    }
+    .tarjeta_tres { 
+        grid-column: 1/3; grid-row: 3/4;
      }
+        .sc_dos h2 {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
     td, th { 
         padding: 6px;
      }
@@ -320,10 +337,15 @@ th {
     .menu ul { 
         flex-wrap: wrap;
      }
-
-    .sc_uno img { 
-        width: 250px; 
+      .sc_uno img { 
+       margin: auto;
+       width: 90%;
+       padding:10px;
     }
+    .contenedor {
+    flex-direction: column;
+    gap: 20px;
+}
     .datos {
         grid-template-columns: auto auto;
         gap: 15px;
@@ -331,22 +353,25 @@ th {
     .datos div { 
         padding: 20px; 
     }
-
     .sc_dos {
-        grid-template-columns: auto auto;
+        grid-template-columns: auto ;
         grid-template-rows: auto;
-        gap: 20px;
+        gap: 10px;
     }
-    .tarjeta_tres {
-        grid-column: 1/3;
-        grid-row: 3/4;
+    .sc_dos h2 {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+    .tarjeta_uno, .tarjeta_dos, .tarjeta_tres {
+        grid-column: auto;
+        grid-row: auto;
     }
     .sc_tres img{
        height: auto;
        gap:10px;
     }
     .estructura {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto ;
         grid-template-rows: auto;
     }
     .itinerario { 
@@ -398,11 +423,13 @@ th {
     .sc_uno { 
         grid-template-columns: auto;
      }
+     .contenedor {
+    flex-direction: column;
+    gap: 20px;
+}
     .sc_uno img { 
         height: auto; 
-    }
-    .presentacion_texto, .subtitulo {
-        grid-template-columns: auto 
+        width: auto
     }
     .sc_uno img {
         width: 200px;
@@ -413,11 +440,13 @@ th {
     .datos, .contenido_uno {
         text-align: center;
     }
-    .sc_dos { 
-        grid-template-columns: auto; 
+    .sc_dos {
+        grid-template-columns: auto ;
+        grid-template-rows: auto;
     }
     .tarjeta_uno, .tarjeta_dos, .tarjeta_tres {
-    grid-template-columns: auto 
+        grid-column: auto;
+        grid-row: auto;
     }
     .estructura {
         grid-template-columns: auto;
