@@ -15,6 +15,7 @@ body {
 
 img, video, audio {
     max-width: 100%;
+    height: auto;
 }
 
 h1{

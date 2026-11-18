@@ -1,0 +1,451 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4ecd8;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr; 
+    min-height: 1080px;
+    line-height: 1.5;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #241c12;
+}
+
+img,video {
+    max-width: 100%;
+    height: auto; 
+}
+h1 {
+    margin: 10px;
+    font-size: 45px;
+}
+
+h2, h3 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- CABECERA --- */
+.cabecera {
+    background-color: #0f3d2e;
+    color: azure;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.marca {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.marca__lema {
+    text-align: left;
+}
+
+.menu {
+    margin: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.menu li:hover {
+    background-color: #f0b323;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+main {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+/* --- SECCIÓN 1 --- */
+.sc_uno {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.contenedor {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.presentacion__texto {
+    flex: 1;
+}
+
+.cartel {
+    margin: 10px;
+}
+
+.cartel img {
+    width: 320px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.subtitulo {
+    background-color: #ffc20e;
+    max-width: 400px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 0 15px 0;
+    text-align: left;
+    border-radius: 4px;
+}
+
+.datos {
+    grid-column: 1 / -1; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.datos div {
+    padding: 25px;
+    background-color: #ffc20e;
+    color: #241c12;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* --- SECCIÓN 2 --- */
+.sc_dos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.sc_dos {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto auto;
+    gap: 30px;
+}
+.sc_dos h2{
+    grid-column: 1 / 4;
+    grid-row: 1/ 2;
+}
+.tarjeta_uno, .tarjeta_dos, .tarjeta_tres {
+    border-radius: 8px;
+    padding: 16px;
+}
+.tarjeta_uno {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.tarjeta_dos {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.tarjeta_tres {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+/* --- SECCIÓN 3 --- */
+.estructura {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.primero, .segundo, .tercero, .cuarto, .quinto {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.estructura img {
+    margin: auto;
+    border-radius: 6px;
+}
+
+/* --- SECCIÓN 4 --- */
+.itinerario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: start;
+}
+
+.tabla_uno, .tabla_dos {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+    padding: 8px 0;
+}
+
+td, th {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: cornflowerblue;
+}
+
+/* --- SECCIÓN 5 --- */
+.mapa {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.mapa img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* --- PIE DE PÁGINA --- */
+.pie {
+    background-color: #0f3d2e;
+    color: azure;
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.pie__org {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.pie__org p {
+    text-align: left;
+    margin: 0;
+}
+
+.contenedor_pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contenedor_pie p {
+    margin: 0;
+}
+
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    h1 { font-size: 32px; }
+    h2, h3 { font-size: 22px; }
+    p { font-size: 18px; }
+
+    .cabecera {
+        flex-direction: column;
+    }
+
+    .contenedor {
+        gap: 25px;
+    }
+
+    .cartel img {
+        width: 260px;
+    }
+
+    .datos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .sc_dos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    .sc_dos h2{
+        grid-column: 1/3;
+        grid-row: auto;
+    }
+    .tarjeta_tres {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .estructura {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .itinerario {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 28px; }
+    h2, h3 { font-size: 22px; }
+    p { font-size: 17px; }
+
+    .cabecera {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .marca {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .marca__lema {
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cartel {
+        margin: 0 auto;
+    }
+
+    .cartel img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .datos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .sc_dos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .sc_dos h2,
+    .tarjeta_uno,
+    .tarjeta_dos,
+    .tarjeta_tres {
+        grid-column: 1 / 2;
+        grid-row: auto;
+    }
+    .estructura {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .itinerario {
+        grid-template-columns: 1fr;
+    }
+
+    .mapa {
+        grid-template-columns: 1fr;
+    }
+
+    .pie, .pie__org {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pie__org p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 { font-size: 24px; }
+    h2, h3 { font-size: 20px; }
+    p { font-size: 16px; }
+
+    .datos {
+        grid-template-columns: 1fr;
+    }
+
+    .estructura {
+        grid-template-columns: 1fr;
+    }
+
+    td, th {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .contenedor_pie {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
