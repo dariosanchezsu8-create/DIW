@@ -153,7 +153,6 @@ section {
     padding: 25px;
     font-weight: bold;
     font-style: italic;
-    text-decoration: underline;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
