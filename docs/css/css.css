@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #f4ecd8;
+    background-color: #eef8f5;
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -11,7 +11,7 @@ body {
     min-height: 1080px;
     line-height: 1.5;
     font-family: Helvetica, Arial, sans-serif;
-    color: #241c12;
+    color: #050f0d;
 }
 
 img,video {
@@ -25,6 +25,7 @@ h1 {
 
 h2, h3 {
     font-size: 25px;
+    color: #050f0d;
 }
 
 p {
@@ -36,8 +37,7 @@ p {
 
 /* --- CABECERA --- */
 .cabecera {
-    background-color: #0f3d2e;
-    color: azure;
+    background-color: #00A0D6;
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     padding: 10px 20px;
@@ -78,11 +78,13 @@ p {
     flex-direction: column;
     align-items: center;
     padding: 7px;
+    font-size:20px ;
+    font-weight: bold;
     border-radius: 10px;
 }
 
 .menu li:hover {
-    background-color: #f0b323;
+    background-color: #02D6C8;
 }
 
 /* --- CONTENIDO PRINCIPAL --- */
@@ -131,7 +133,7 @@ section {
 }
 
 .subtitulo {
-    background-color: #ffc20e;
+    background-color: #02D6C8;
     max-width: 400px;
     font-weight: bold;
     padding: 10px;
@@ -149,8 +151,6 @@ section {
 
 .datos div {
     padding: 25px;
-    background-color: #ffc20e;
-    color: #241c12;
     font-weight: bold;
     font-style: italic;
     text-decoration: underline;
@@ -160,7 +160,12 @@ section {
     justify-content: center;
     align-items: center;
 }
-
+.contenido_dos,.contenido_cuatro {
+    background-color: #8BD69E;
+}
+.contenido_uno,.contenido_tres{
+      background-color: #81D6B3;
+}
 .datos p {
     text-align: center;
     margin: 5px 0;
@@ -212,6 +217,7 @@ section {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-size:20px ;
 }
 
 .estructura img {
@@ -234,20 +240,23 @@ section {
 table {
     width: 100%;
     border-collapse: collapse;
+    font-size:20px ;
 }
 
 caption {
     text-align: left;
     padding: 8px 0;
+    
 }
 
 td, th {
     padding: 10px;
     text-align: left;
+     
 }
 
 th {
-    background-color: cornflowerblue;
+    background-color: #00A0D6;
 }
 
 /* --- SECCIÓN 5 --- */
@@ -266,8 +275,7 @@ th {
 
 /* --- PIE DE PÁGINA --- */
 .pie {
-    background-color: #0f3d2e;
-    color: azure;
+    background-color: #00A0D6;
     grid-row: 3 / 4;
     grid-column: 1 / -1;
     padding: 20px;
@@ -308,10 +316,21 @@ th {
 /* ---------- MEDIA QUERIES ---------- */
 
 @media (min-width: 769px) and (max-width: 1023px) {
-    h1 { font-size: 32px; }
-    h2, h3 { font-size: 22px; }
-    p { font-size: 18px; }
-
+    h1 {
+         font-size: 32px;
+         }
+    h2, h3 { 
+        font-size: 22px;
+     }
+    p { 
+        font-size: 18px;
+     }
+    table{
+        font-size:18px ;
+    }
+    .primero, .segundo, .tercero, .cuarto, .quinto {
+        font-size:18px ;
+    }
     .cabecera {
         flex-direction: column;
     }
@@ -352,10 +371,18 @@ th {
 }
 
 @media (max-width: 768px) {
-    h1 { font-size: 28px; }
-    h2, h3 { font-size: 22px; }
-    p { font-size: 17px; }
-
+    h1 {
+         font-size: 28px; 
+        }
+    h2, h3 { 
+        font-size: 22px;
+     }
+    p { 
+        font-size: 17px;
+     }
+    .menu li{
+        font-size: 17px;
+    }
     .cabecera {
         flex-direction: column;
         text-align: center;
@@ -427,10 +454,24 @@ th {
 }
 
 @media (max-width: 576px) {
-    h1 { font-size: 24px; }
-    h2, h3 { font-size: 20px; }
-    p { font-size: 16px; }
-
+    h1 {
+         font-size: 24px; 
+        }
+    h2, h3 { 
+        font-size: 20px; 
+    }
+    p { 
+        font-size: 16px; 
+    }
+    table{
+        font-size:15px ;
+    }
+    .primero, .segundo, .tercero, .cuarto, .quinto {
+        font-size:15px ;
+    }
+    .menu li{
+        font-size:16px ;
+    }
     .datos {
         grid-template-columns: 1fr;
     }
