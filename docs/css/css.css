@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-
+/* --- GENERAL --- */
 body {
     background-color: #eef8f5;
     margin: 0;
@@ -56,7 +56,7 @@ p {
     gap: 30px;
 }
 
-.marca__lema {
+.fecha {
     text-align: left;
 }
 
@@ -393,7 +393,7 @@ th {
         gap: 10px;
     }
 
-    .marca__lema {
+    .fecha {
         text-align: center;
     }
 
@@ -424,10 +424,7 @@ th {
         grid-template-columns: 1fr;
         gap: 15px;
     }
-    .sc_dos h2,
-    .tarjeta_uno,
-    .tarjeta_dos,
-    .tarjeta_tres {
+    .sc_dos h2,.tarjeta_uno,.tarjeta_dos,.tarjeta_tres {
         grid-column: 1 / 2;
         grid-row: auto;
     }
